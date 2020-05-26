@@ -4,7 +4,7 @@ namespace Storage\Contract;
 
 
 /**
- * Interface ConfigInterface
+ * Interface StorageInterface
  * @package Storage\Contract
  */
 interface StorageInterface
