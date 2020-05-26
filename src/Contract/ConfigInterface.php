@@ -7,7 +7,7 @@ namespace Storage\Contract;
  * Interface ConfigInterface
  * @package Storage\Contract
  */
-interface ConfigInterface
+interface StorageInterface
 {
     /**
      * Gets the value for the given key
