@@ -2,5 +2,10 @@
     "name": "unclexo/filestorate",
     "description": "A light-weight flat file storage designed for storing associative array data",
     "license": "MIT License",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Storage\\": "./src"
+        }
+    }
 }
