@@ -28,13 +28,13 @@ interface StorageInterface
     public static function set($key, $value);
 
     /**
-     * Merges with an array fetched by the given key
+     * Updates an array fetched by the given key
      *
      * @param string $key
      * @param array $array An associative array
      * @return mixed
      */
-    public static function merge($key, array $array);
+    public static function update($key, array $array);
 
     /**
      * Determines whether or not there is any value for a given key
