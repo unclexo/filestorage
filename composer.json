@@ -5,7 +5,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Storage\\": "./src"
+            "Xo\\Storage\\": "./src"
         }
     }
 }
