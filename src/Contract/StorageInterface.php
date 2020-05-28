@@ -1,11 +1,11 @@
 <?php
 
-namespace Storage\Contract;
+namespace Xo\Storage\Contract;
 
 
 /**
  * Interface StorageInterface
- * @package Storage\Contract
+ * @package Xo\Storage\Contract
  */
 interface StorageInterface
 {
@@ -23,7 +23,7 @@ interface StorageInterface
      *
      * @param string $key
      * @param mixed $value
-     * @return void
+     * @return bool
      */
     public static function set($key, $value);
 
@@ -32,7 +32,7 @@ interface StorageInterface
      *
      * @param string $key
      * @param array $array An associative array
-     * @return mixed
+     * @return bool
      */
     public static function update($key, array $array);
 
@@ -43,4 +43,12 @@ interface StorageInterface
      * @return bool
      */
     public static function has($key);
+
+    /**
+     * Removes array data based on the given key
+     *
+     * @param string $key
+     * @return bool
+     */
+    public static function remove($key);
 }
