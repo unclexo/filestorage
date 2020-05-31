@@ -1,5 +1,5 @@
 {
-    "name": "unclexo/filestorate",
+    "name": "unclexo/filestorage",
     "description": "A light-weight flat file storage designed for storing associative array data",
     "license": "MIT License",
     "autoload": {
