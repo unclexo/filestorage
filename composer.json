@@ -2,11 +2,13 @@
     "name": "unclexo/filestorate",
     "description": "A light-weight flat file storage designed for storing associative array data",
     "license": "MIT License",
-    "require": {},
     "autoload": {
         "psr-4": {
             "Xo\\Storage\\": "./src"
         }
+    },
+    "require": {
+        "php": "^7.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.1",
