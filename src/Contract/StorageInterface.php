@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace Xo\Storage\Contract;
 
@@ -16,7 +16,7 @@ interface StorageInterface
      * @param mixed $default
      * @return mixed
      */
-    public static function get($key, $default = null);
+    public static function get(string $key, $default = null);
 
     /**
      * Sets a value to the given key
@@ -25,16 +25,16 @@ interface StorageInterface
      * @param mixed $value
      * @return bool
      */
-    public static function set($key, $value);
+    public static function set(string $key, $value);
 
     /**
      * Updates an array fetched by the given key
      *
      * @param string $key
-     * @param array $array An associative array
+     * @param array[] $array
      * @return bool
      */
-    public static function update($key, array $array);
+    public static function update(string $key, array $array);
 
     /**
      * Determines whether or not there is any value for a given key
@@ -42,7 +42,7 @@ interface StorageInterface
      * @param string $key
      * @return bool
      */
-    public static function has($key);
+    public static function has(string $key);
 
     /**
      * Removes array data based on the given key
@@ -50,5 +50,5 @@ interface StorageInterface
      * @param string $key
      * @return bool
      */
-    public static function remove($key);
+    public static function remove(string $key);
 }
