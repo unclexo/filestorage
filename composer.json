@@ -1,7 +1,7 @@
 {
     "name": "unclexo/filestorage",
     "type": "library",
-    "description": "A light-weight flat file storage designed for storing associative array data",
+    "description": "A blazing fast and light-weight flat-file storage designed for storing array data to keys",
     "keywords": ["storage","file-storage","flat-file-storage","associative-array-storage","storage-container","storage-manager"],
     "homepage": "https://github.com/unclexo/filestorage",
     "license": "MIT",
