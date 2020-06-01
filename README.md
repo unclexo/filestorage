@@ -1,6 +1,11 @@
 # filestorage
 A blazing fast and light-weight flat-file storage designed for storing array data to keys.
 
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D7.3-informational)](https://php.net/)
+[![PHPStan](https://img.shields.io/badge/PHPStan-passing-success)](https://phpstan.org/)
+[![PHP Unittest](https://img.shields.io/badge/tests-15-blue)](https://packagist.org/packages/phpunit/phpunit)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Funclexo%2Ffilestorage)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Funclexo%2Ffilestorage)
+
 ## Sample Array Data
 
 ```
@@ -119,7 +124,7 @@ Storage::delete();
 ```
 
 ## License
-`filestorage` released under MIT License
+[![GitHub license](https://img.shields.io/github/license/unclexo/filestorage)](https://github.com/unclexo/filestorage/blob/master/LICENSE)
   
 
 
