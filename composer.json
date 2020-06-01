@@ -1,7 +1,18 @@
 {
     "name": "unclexo/filestorage",
+    "type": "library",
     "description": "A light-weight flat file storage designed for storing associative array data",
-    "license": "MIT License",
+    "keywords": ["storage","file-storage","flat-file-storage","associative-array-storage","storage-container","storage-manager"],
+    "homepage": "https://github.com/unclexo/filestorage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "unclexo",
+            "email": "itsunclexo@gmail.com",
+            "homepage": "https://github.com/unclexo",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Xo\\Storage\\": "./src"
