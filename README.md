@@ -1,2 +1,125 @@
 # filestorage
-A light-weight flat file storage designed for storing associative array data
+A light-weight flat file storage designed for storing array data to keys.
+
+## Sample Array Data
+
+```
+$data = [
+    'facebook' => [
+        'clientId'      => 'facebookClientId',
+        'clientSecret'  => 'facebookClientSecret',
+        'redirectUri    => 'facebookRedirectUri',
+    ],
+    'twitter' => [
+        'clientId'      => 'twitterClientId',
+        'clientSecret'  => 'twitterClientSecret',
+        'redirectUri    => 'twitterRedirectUri',
+    ],
+];
+```
+
+Alternatively, you can store ()key => value) pairs too.
+
+```
+$data = [
+    'key' => 'value',
+    'more_key' => ['key' => 'value'],
+];
+```
+
+## Download using composer
+
+```
+composer require unclexo/filestorage
+```
+
+## Creating a store
+`filestorage` stores array data into a file. You can create a file-storage using `Storage::create($data, $location)`. 
+Keep in mind `$location` must be existed and writable.
+
+```
+use Xo\Storage\Storage;
+
+$data = [
+    'facebook' => [
+        'clientId'      => 'facebookClientId',
+        'clientSecret'  => 'facebookClientSecret',
+        'redirectUri    => 'facebookRedirectUri',
+    ],
+    'twitter' => [
+        'clientId'      => 'twitterClientId',
+        'clientSecret'  => 'twitterClientSecret',
+        'redirectUri    => 'twitterRedirectUri',
+    ],
+];
+
+/** File must be writable */
+$location = '/home/username/data/storage.txt';
+
+Storage::create($data, $location);
+```
+
+## Using the store
+Once you've created a store, you can use the store through the whole application. Just create an instance of the store specifying the file location and use wherever you need it.
+
+```
+use Xo\Storage\Storage;
+
+$location = '/home/username/data/storage.txt';
+
+Storage::getInstance($location);
+```
+
+### Get data for a given key
+Now, you're able to get value for a given key from the store you created earlier. 
+
+```
+Storage::get('facebook'); /** returns */
+
+[
+    'clientId'      => 'facebookClientId',
+    'clientSecret'  => 'facebookClientSecret',
+    'redirectUri    => 'facebookRedirectUri',
+]
+```
+
+#### To set data
+```
+Storage::set(string $key, mixed $value);
+```
+
+#### To update data
+```
+Storage::update(string $key, array $array);
+```  
+
+#### To check the availability of a key
+```
+Storage::has(string $key);
+```  
+
+#### To get all data
+```
+Storage::all();
+```   
+
+#### To remove data
+```
+Storage::remove(string $key);
+```    
+
+#### To clear all data
+```
+Storage::clear();
+```    
+
+#### To delete the store
+```
+Storage::delete();
+```
+
+## License
+`filestorage` released under MIT License
+  
+
+
