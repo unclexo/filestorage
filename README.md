@@ -1,5 +1,5 @@
 # filestorage
-A light-weight flat file storage designed for storing array data to keys.
+A blazing fast and light-weight flat-file storage designed for storing array data to keys.
 
 ## Sample Array Data
 
@@ -18,7 +18,7 @@ $data = [
 ];
 ```
 
-Alternatively, you can store ()key => value) pairs too.
+Alternatively, you can store (key => value) pairs too.
 
 ```
 $data = [
