@@ -90,7 +90,9 @@ Storage::getInstance($location);
 ### Get data for a given key
 Now, you're able to get value for a given key from the store you created earlier. 
 
-```
+```php
+<?php
+
 Storage::get('facebook'); /** returns */
 
 [
@@ -101,37 +103,51 @@ Storage::get('facebook'); /** returns */
 ```
 
 #### To set data
-```
+```php
+<?php
+
 Storage::set(string $key, mixed $value);
 ```
 
 #### To update data
-```
+```php
+<?php
+
 Storage::update(string $key, array $array);
 ```  
 
 #### To check the availability of a key
-```
+```php
+<?php
+
 Storage::has(string $key);
 ```  
 
 #### To get all data
-```
+```php
+<?php
+
 Storage::all();
 ```   
 
 #### To remove data
-```
+```php
+<?php
+
 Storage::remove(string $key);
 ```    
 
 #### To clear all data
-```
+```php
+<?php
+
 Storage::clear();
 ```    
 
 #### To delete the store
-```
+```php
+<?php
+
 Storage::delete();
 ```
 
