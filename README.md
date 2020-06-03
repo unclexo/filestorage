@@ -8,7 +8,9 @@ A blazing fast and light-weight flat-file storage designed for storing array dat
 
 ## Sample Array Data
 
-```
+```php
+<?php
+
 $data = [
     'facebook' => [
         'clientId'      => 'facebookClientId',
@@ -25,7 +27,9 @@ $data = [
 
 Alternatively, you can store (key => value) pairs too.
 
-```
+```php
+<?php
+ 
 $data = [
     'key' => 'value',
     'more_key' => ['key' => 'value'],
@@ -34,7 +38,7 @@ $data = [
 
 ## Download using composer
 
-```
+```bash
 composer require unclexo/filestorage
 ```
 
@@ -42,7 +46,11 @@ composer require unclexo/filestorage
 `filestorage` stores array data into a file. You can create a file-storage using `Storage::create($data, $location)`. 
 Keep in mind `$location` must be existed and writable.
 
-```
+```php
+<?php
+
+require_once './vendor/autoload.php';
+
 use Xo\Storage\Storage;
 
 $data = [
@@ -67,7 +75,11 @@ Storage::create($data, $location);
 ## Using the store
 Once you've created a store, you can use the store through the whole application. Just create an instance of the store specifying the file location and use wherever you need it.
 
-```
+```php
+<?php
+
+require_once './vendor/autoload.php';
+
 use Xo\Storage\Storage;
 
 $location = '/home/username/data/storage.txt';
