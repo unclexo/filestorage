@@ -13,12 +13,12 @@ $data = [
     'facebook' => [
         'clientId'      => 'facebookClientId',
         'clientSecret'  => 'facebookClientSecret',
-        'redirectUri    => 'facebookRedirectUri',
+        'redirectUri'   => 'facebookRedirectUri',
     ],
     'twitter' => [
         'clientId'      => 'twitterClientId',
         'clientSecret'  => 'twitterClientSecret',
-        'redirectUri    => 'twitterRedirectUri',
+        'redirectUri'   => 'twitterRedirectUri',
     ],
 ];
 ```
@@ -49,12 +49,12 @@ $data = [
     'facebook' => [
         'clientId'      => 'facebookClientId',
         'clientSecret'  => 'facebookClientSecret',
-        'redirectUri    => 'facebookRedirectUri',
+        'redirectUri'   => 'facebookRedirectUri',
     ],
     'twitter' => [
         'clientId'      => 'twitterClientId',
         'clientSecret'  => 'twitterClientSecret',
-        'redirectUri    => 'twitterRedirectUri',
+        'redirectUri'   => 'twitterRedirectUri',
     ],
 ];
 
